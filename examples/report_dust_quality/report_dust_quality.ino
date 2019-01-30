@@ -4,7 +4,7 @@ const char *ssid = "your-wifi-ssid";
 const char *passw = "your-wifi-password";
 
 String sendername;
-float lat, lng;
+String lat, lng;
 float pm25, pm10;
 
 String response; 
