@@ -78,7 +78,7 @@ String pm25senses::checkServerReady(){
   }
 }
 
-String pm25senses::reportPM25senses(String senderName, float lat, float lng, float pm25, float pm10){
+String pm25senses::reportPM25senses(String senderName, String lat, String lng, float pm25, float pm10){
 
     _senderName = senderName;
     _lat = String(lat);
