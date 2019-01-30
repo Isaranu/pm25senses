@@ -3,10 +3,9 @@
 const char *ssid = "your-wifi-ssid";
 const char *passw = "your-wifi-password";
 
-String sendername = "your-reporter-name";
-float lat = 13.000000;
-float lng = 100.000000;
-float pm25=0, pm10=0;
+String sendername;
+float lat, lng;
+float pm25, pm10;
 
 String response; 
 
@@ -25,7 +24,9 @@ void setup() {
 void loop() {
 
   /* Set your lat, lng, pm25, pm10 here */
-  // This is Mock up data only
+  // Please note, This is Mock up data only
+  // Please replace your data here.
+  sendername = "your-reporter-name";
   lat = 13.685024;  
   lng = 100.509837;
   pm25 = 25;
