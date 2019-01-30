@@ -35,5 +35,5 @@ void loop() {
   response = mydevice.reportPM25senses(sendername, lat, lng, pm25, pm10);
   Serial.println(response);
   
-  delay(5000);
+  delay(10000);
 }
