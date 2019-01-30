@@ -16,7 +16,7 @@ class pm25senses{
     bool begin(const char *ssid, const char *passw);
     String checkServerReady();
     String getVersion();
-    String reportPM25senses(String senderName, float lat, float lng, float pm25, float pm10);
+    String reportPM25senses(String senderName, String lat, String lng, float pm25, float pm10);
 
   private:
     const char *_ssid, *_passw, *_libversion;
