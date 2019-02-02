@@ -27,8 +27,8 @@ void loop() {
   // Please note, This is Mock up data only
   // Please replace your data here.
   sendername = "your-reporter-name";
-  lat = 13.685024;  
-  lng = 100.509837;
+  lat = "your-latitude";  
+  lng = "your-longitude";
   pm25 = 25;
   pm10 = 90;
 
