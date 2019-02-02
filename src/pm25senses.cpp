@@ -8,7 +8,7 @@ Powered by LogiSenses and IoTtweet
 
 #define host "pm25senses.iottweet.com"
 #define port 4000
-#define libversion "v1.0"
+#define libversion "v1.1"
 #define sensesSecretToken "AA9319345113693D34CC6F66AC568"
 
 #define LAG_TIME 500
@@ -34,13 +34,20 @@ bool pm25senses::begin(const char *ssid, const char *passw){
   if(WiFi.status() == WL_CONNECTED){
     _conn = true;
     Serial.println("connected !");
+
+    String _version = getVersion();
+    Serial.println("---------------------------------------------");
+    Serial.println("pm25senses library version > " + _version);
+    Serial.println("---------------------------------------------");
     Serial.println("- Ready to send data to pm25senses platform. -");
+    Serial.println();
     Serial.println("This library compatible for WiFi Chip ESP8266.");
     Serial.println("0. Set your name in String format. (No white space in name)");
     Serial.println("1. Prepare your coordinate location as 'latitude' and 'longitude' in float format. (6 digits)");
     Serial.println("2. PM2.5 and PM10 data in ug/m3 as float format");
     Serial.println("3. Call function 'reportPM25senses' and place your above data in this function");
     Serial.println("4. See community data at http://pm25senses.iottweet.com");
+    Serial.println();
     Serial.println("Finished..!");
     Serial.println("-----------------------------------------------");
   }else{
